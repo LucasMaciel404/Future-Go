@@ -1,0 +1,57 @@
+.tam{
+    width:75%;
+    margin: auto;
+}
+.btn1{
+    background-color: red;
+    border-radius: 10%;
+    border:none;
+    color:white;
+    padding: 5px;
+    text-decoration: none;
+}
+.btn2{
+    background-color:blue ;
+    border-radius: 10%;
+    border:none;
+    color:white;
+    padding: 5px;
+    text-decoration: none;
+}
+.bla :hover{
+    background-color: white;
+    border-radius: 10%;
+    border:none;
+    color:black;
+    padding: 5px;
+    text-decoration: none;
+}
+.bla :hover{
+    background-color:white ;
+    border-radius: 10%;
+    border:none;
+    color:black;
+    padding: 5px;
+    text-decoration: none;
+}
+.body{
+    background-color: rgb(12, 12, 12);
+    color: rgb(255, 255, 255);
+    padding: 100px;
+    margin: 10px;
+}
+.nav-link{
+    margin-left: 0px;
+    padding-bottom: 0px;
+}
+.nav-item a:hover{
+    color:white;
+    margin-left: 0px;
+    padding-bottom: 0px;
+    
+}
+#titulo{
+    margin-top: 5px;
+    color: white;
+    background-color: rgb(12, 12, 12);
+}

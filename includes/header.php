@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,23 +9,16 @@
     <title>Future Go</title>
 </head>
 <body>
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-dark bg-dark"><!-- NAV-BAR  by bootstrap-->
     <div class="container-fluid">
-    
-        <a class="navbar-brand" href="#">
-                Future Go
-        </a>
-        <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+        <a class="navbar-brand" href="#">Future Go</a>
+        <form class="d-flex"><!-- NAV-BAR -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                <a class="nav-link" href="/public/php/editar.php">login</a>
+                <a class="nav-link" href="/view/php/login.php">Sing Up</a><!-- link para minha tela de login -->
                 </li>
             </ul>
-        </form>
-        
-        
+        </form> 
     </div>
     
 </nav>
