@@ -21,8 +21,6 @@
 <?php
 require_once __DIR__ . "/../../app/db/database.php";
 $con = new Database;
-$nome = htmlspecialchars($_POST["nome"]?? null);//recebe via get e protege contra SQL inject;
-$gmail = htmlspecialchars($_POST["gmail"]?? null);//recebe via get e protege contra SQL inject;
 if (isset($_POST['continuar']) and isset($_POST['nome']) and isset($_POST['gmail']))//verifica se a conteudo nas variaveis;
 {
     $con->criete($nome,$gmail);
