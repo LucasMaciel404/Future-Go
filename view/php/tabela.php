@@ -16,6 +16,8 @@
         <th scope="col">#</th>
         <th scope="col">nonme</th>
         <th scope="col">curso</th>
+        <th scope="col">senha</th>
+        <th scope="col">numero</th>
         <th scope="col"></th>
         <th scope="col"></th>
         </tr>

@@ -11,12 +11,25 @@ function tabela()//funçao tabela(); imprime a tabela na minha tela com os valor
         $id = $key['id'];//recebera o id para mandar por via $_GET;
         $nome = $key['nome'];//pega a variavel nome da minha tabela;
         $gmail = $key['gmail'];//pega a variavel gmail do meu banco de dados;
+        $senha = $key['senha'];//pega a variavel senha do meu banco de dados;
+        $numero = $key['numero'];//pega a variavel numero do meu banco de dados;
         echo"   <tr><th scope='row'>$cont</th>
                     <td>$nome</td>
                     <td>$gmail</td>
-                    <td class='bla'><a class='btn2' href='/view/php/editar.php?nid=$id'>Editar</a></td>
-                    <td class='bla'><a class='btn1' href='/view/php/excluir.php?nid=$id'>Excluir</a></td>
-                </tr>"; //vai exibir conteudo em uma tabela stilizada;
+                    <td>$senha</td>
+                    <td>$numero</td>
+                    "; //vai exibir conteudo em uma tabela stilizada;
+        session_start();
+        if ($_SESSION['login']){
+            echo"<td class='bla'><a class='btn2' href='/view/php/editar.php?nid=$id'>Editar</a></td>
+                 <td class='bla'><a class='btn1' href='/view/php/excluir.php?nid=$id'>Excluir</a></td>
+                 </tr>";
+        }
+        else{
+            echo"<td></td>
+                <td></td>
+                </tr>";
+        }
     }
 
 }

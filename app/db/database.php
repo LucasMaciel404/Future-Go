@@ -65,7 +65,9 @@ class Database //ira fazer a conexão do banco de dados;
         $con = $this->conecte();//conecta no banco de dados
         $nome = htmlspecialchars($_POST['nome']?? null);//impede contra sql_inject e recebe a variavel nome via $_POST;
         $gmail = htmlspecialchars($_POST['gmail']?? null);//impede contra sql_inject e recebe a variavel gmail via $_POST;
-        $sql = "INSERT INTO alunos (nome, gmail) VALUES ('$nome','$gmail')";//comando SQL;
+        $senha = htmlspecialchars($_POST['senha']?? null);//impede contra sql_inject e recebe a variavel gmail via $_POST;
+        $numero = htmlspecialchars($_POST['numero']?? null);//impede contra sql_inject e recebe a variavel gmail via $_POST;
+        $sql = "INSERT INTO alunos (nome, gmail,senha,numero) VALUES ('$nome','$gmail','$senha','$numero')";//comando SQL;
         $resp = $con->prepare($sql);//preparando o comando SQL para execuçao;
         $resp->execute();//executa o comando SQL;
     }

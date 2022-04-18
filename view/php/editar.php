@@ -12,8 +12,10 @@
     <!-- FORMULARIO DE METODO POST -->
     <form class='box' method='POST' action='#'>
         <h1>Editar</h1>
-        <input type='text' placeholder='nome' value = "<?php  ?>" name="nome">
-        <input type="email" placeholder="gmail" name="gmail"> <br>
+        <input type='text' placeholder='nome' value = "" name="nome">
+        <input type="email" placeholder="gmail" name="gmail">
+        <input type="password" placeholder="senha" name="senha">
+        <input type="text" placeholder="numero de telefone" name="numero"><br>
         <input type="submit" value = "editar" name="editar">
         <a class="blaa"href="/index.php">voltar</a>
     </form>
