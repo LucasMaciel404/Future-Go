@@ -19,8 +19,7 @@ function tabela()//funçao tabela(); imprime a tabela na minha tela com os valor
                     <td>$senha</td>
                     <td>$numero</td>
                     "; //vai exibir conteudo em uma tabela stilizada;
-        session_start();
-        if ($_SESSION['login']){
+        if ($_SESSION['login']?? false){
             echo"<td class='bla'><a class='btn2' href='/view/php/editar.php?nid=$id'>Editar</a></td>
                  <td class='bla'><a class='btn1' href='/view/php/excluir.php?nid=$id'>Excluir</a></td>
                  </tr>";
@@ -32,6 +31,9 @@ function tabela()//funçao tabela(); imprime a tabela na minha tela com os valor
         }
     }
 
+}
+function sair(){
+     session_destroy();
 }
 function excluir($id)//exclue uma informaçao da tabela;
 {

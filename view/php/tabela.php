@@ -8,16 +8,19 @@
     <title>Document</title>
 </head>
 <body>
-    <center> <h1 id="titulo">Tabela de Usuarios</h1></center>
-<div class="body">
+    <div id="titulo">
+        <center> <h1 >Tabela de Usuarios</h1></center>
+    </div>
+    
+
 <table class="table table-dark table-hover">
     <thead>
         <tr>
         <th scope="col">#</th>
-        <th scope="col">nonme</th>
-        <th scope="col">curso</th>
-        <th scope="col">senha</th>
-        <th scope="col">numero</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Email</th>
+        <th scope="col">Senha</th>
+        <th scope="col">Numero</th>
         <th scope="col"></th>
         <th scope="col"></th>
         </tr>
@@ -25,7 +28,6 @@
     <tbody>
         <?php require_once __DIR__ . '/../../app/action/resources.php'; tabela(); ?>
     </tbody>
-    </table>
-</div>
+</table>
 </body>
 </html>

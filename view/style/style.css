@@ -1,7 +1,4 @@
-.tam{
-    width:75%;
-    margin: auto;
-}
+
 .btn1{
     background-color: red;
     border-radius: 10%;
@@ -37,21 +34,17 @@
 .body{
 
     color: rgb(255, 255, 255);
-    padding: 100px;
-    margin: 10px;
 }
-.nav-link{
-    margin-left: 0px;
-    padding-bottom: 0px;
+
+#login{
+    padding-right: 10px;
+    border-bottom: none;
 }
+
 .nav-item a:hover{
     color:white;
-    margin-left: 0px;
-    padding-bottom: 0px;
-    
 }
 #titulo{
-    margin-top: 5px;
     color: white;
-    background-color: rgb(12, 12, 12);
+    background-color: #212529;
 }
