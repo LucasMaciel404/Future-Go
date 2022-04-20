@@ -1,4 +1,6 @@
 <?php
+use App\db\Database;
+
 require_once __DIR__ . "/../db/database.php";
 function tabela()//funçao tabela(); imprime a tabela na minha tela com os valores do banco de dados;
 {

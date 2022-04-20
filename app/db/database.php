@@ -1,16 +1,21 @@
 <?php
+namespace App\db;
+use PDO;
+use PDOException;
+const MYSQL_HOST = "localhost";//nome do host;
+const MYSQL_DATABASE = "test";//nome do banco de dados; 
+const MYSQL_USER = "root";//usuario do banco de dados;
+const MYSQL_PASSWORD = "";//senha do banco de dados;
+
 class Database //ira fazer a conexão do banco de dados;
 {
-    const HOST = "localhost";//nome do host;
-    const DATABASE = "test";//nome do banco de dados; 
-    const USER = "root";//usuario do banco de dados;
-    const PASSWORD = "";//senha do banco de dados;
     private function conecte()//função fara a conexao com o banco e retornara a variavel de conexao;
     {
         try //caso a tentativa de conexao de certo;
         {
-            $con = new PDO("mysql:host=" .$this::HOST. ";dbname=".$this::DATABASE,$this::USER,$this::PASSWORD);
+            $con = new PDO("mysql:host=" . MYSQL_HOST . ";dbname=". MYSQL_DATABASE, MYSQL_USER, MYSQL_PASSWORD);
             $con ->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+            array(PDO::ATTR_PERSISTENT => true);
             return $con;
         }
         catch(PDOException $e)//coloca o tipo de erro em uma variavel

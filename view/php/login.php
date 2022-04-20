@@ -19,6 +19,7 @@
 </html>
 <?php
 require_once __DIR__ . '/../../app/db/database.php';
+use App\db\Database;
 
 if ($_POST){
     $f = new Database;

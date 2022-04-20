@@ -21,6 +21,4 @@
     </form>
 </body>
 </html>
-<?php
-require_once __DIR__ . "/../../app/action/resources.php";
-editar();
+<?php require_once __DIR__ . "/../../app/action/resources.php"; editar();

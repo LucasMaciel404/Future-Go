@@ -21,7 +21,8 @@
 </body>
 </html>
 <?php
-require_once __DIR__ . "/../../app/db/database.php";
+require_once __DIR__ . '/../../app/db/database.php';
+use App\db\Database;
 $con = new Database;
 if (isset($_POST['continuar']) and isset($_POST['nome']) and isset($_POST['gmail']) and isset($_POST['senha']) and isset($_POST['numero']))//verifica se a conteudo nas variaveis;
 {
